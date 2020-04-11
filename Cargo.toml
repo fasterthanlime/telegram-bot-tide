@@ -1,0 +1,16 @@
+[package]
+name = "telegram-bot-tide"
+version = "0.1.0"
+authors = ["Michał Sidor (Michcioperz) <public+git@meekchopp.es>", "fasterthanlime <fasterthanlime@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tide = "0.6"
+telegram-bot = "0.7"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+log = "0.4.8"
+pretty_env_logger = "0.4.0"
+tokio = { version = "0.2.17", features = [
+    "macros", "rt-core", "rt-util", "rt-threaded"
+] }
